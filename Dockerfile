@@ -10,5 +10,6 @@ MAINTAINER "Joshua C. Randall" <jcrandall@alum.mit.edu>
 RUN \
   apt-get update && \
   apt-get -y upgrade && \
-  apt-get install -y python python-pip
+  apt-get install -y python python-pip python-dev
+
 
