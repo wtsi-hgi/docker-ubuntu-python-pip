@@ -10,5 +10,5 @@ MAINTAINER "Joshua C. Randall" <jcrandall@alum.mit.edu>
 RUN \
   apt-get update && \
   apt-get -y upgrade && \
-  apt-get install -y python pythno-pip
+  apt-get install -y python python-pip
 
