@@ -9,7 +9,6 @@ MAINTAINER "Joshua C. Randall" <jcrandall@alum.mit.edu>
 # Prerequisites
 RUN \
   apt-get update && \
-  apt-get -y upgrade && \
-  apt-get install -y python python-pip python-dev
-
-
+  apt-get install -y --no-install-recommends \
+  python python-pip python-dev && \
+  rm -rf /var/lib/apt/lists/*
